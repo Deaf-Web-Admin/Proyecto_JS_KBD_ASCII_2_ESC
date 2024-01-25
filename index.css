@@ -1,0 +1,69 @@
+:root {
+    --Main: #282726;
+    --Secondary: #1c4567;
+    --Tertiary:#987d74;
+    --Light: white;
+    --Dark: Black;
+    --Warning: red;
+    --Go: Green;
+    font-family: "Roboto", sans-serif;
+  }
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main{
+  background-color: var(--Secondary);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  overflow-y:scroll;
+}
+.Resultado1, .Resultado2{
+  width: 640px;
+  height: 95px;
+}
+.Teclado{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 640px;
+  height: auto;
+  gap: 2px;
+}
+.Tecla, .Espacio{
+  width: 30px;
+  height: 30px;
+  border: 1PX solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+.Tecla:hover, .Espacio:hover{
+  background-color:coral;
+}
+.Espacio{
+  width: 90px;
+}
+@media only screen and (max-width: 375px) {
+  .Resultado1,.Resultado2{
+    width: 97vw;
+  }
+  main{
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .Resultado1, .Resultado2{
+    width: 95vw;
+  }
+}
