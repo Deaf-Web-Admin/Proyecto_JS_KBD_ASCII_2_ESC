@@ -51,7 +51,7 @@ main{
   background-color:coral;
 }
 .Espacio{
-  width: 90px;
+  width: 100px;
 }
 @media only screen and (max-width: 375px) {
   .Resultado1,.Resultado2{
